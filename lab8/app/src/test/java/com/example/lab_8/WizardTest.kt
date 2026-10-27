@@ -32,4 +32,18 @@ class WizardTest {
 
         assertEquals(5, evilWizard.mana) // mana still is 5
     }
+
+    @Test
+    fun restoreMana_amountAddedExceedsOneHundred_manaSetToOneHundred() {
+
+    }
+
+
+    @Test
+    fun restoreMana_amountAddedDoesNotExceedOneHundred_manaIncreasesCorrectly() {
+        evilWizard.restoreMana(40) // 30 + 40 = 70, so mana should be set to 70
+
+        assertEquals(70, evilWizard.mana)
+    }
+
 }
