@@ -27,4 +27,8 @@ class Wizard(val name: String, var mana: Int, var spellPower: Int) {
 
     }//end restoreMana
 
+    fun train(){
+
+    }//end train
+
 }
